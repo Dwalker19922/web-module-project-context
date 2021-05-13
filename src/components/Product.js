@@ -1,6 +1,7 @@
-import React from 'react';
-
+import React,{useContext} from 'react';
+import CartContext from '../contexts/CartContext'
 const Product = props => {
+	const {cart} = useContext(CartContext);
 	return (
 		<div className="product">
 			<img src={props.product.image} alt={`${props.product.title} book`} />
