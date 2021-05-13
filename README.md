@@ -18,15 +18,15 @@ In this project you'll take take an almost completed e-commerce store and refact
 
 ### Task 1: Project Set up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your team lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository in your terminal.
-- [ ] CD into the project base directory `cd react-shopping-cart`.
-- [ ] Download project dependencies by running `npm install`.
-- [ ] Start up the app using `npm start`.
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [ d] Create a forked copy of this project.
+- [ d] Add your team lead as collaborator on Github.
+- [ d] Clone your OWN version of the repository in your terminal.
+- [ d] CD into the project base directory `cd react-shopping-cart`.
+- [ d] Download project dependencies by running `npm install`.
+- [ d] Start up the app using `npm start`.
+- [ d] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [ d] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [ d] Push commits: git push origin `<firstName-lastName>`.
 
 ### Task 2: MVP
 
@@ -38,11 +38,11 @@ Before you get started, please take a few minutes and get acquainted with this a
 
 - To combat this from happening we're going to refactor our application to use `Context API`, making it easier and more effiecent to access data across our application.
 
-**Step 1 - Add item functionality**
+**Step 1 - Add item functionality** d
 
 - In `App.js` there is a function called `addItem`. Finish writing the logic in this function to be able to add the given item to the shopping cart
 
-**STEP 2 - Creating ProductContext**
+**STEP 2 - Creating ProductContext** d
 
 - In `src`, create a new folder named `contexts`, this folder is going to be used to hold all of `context objects` we create.
 
@@ -50,7 +50,7 @@ Before you get started, please take a few minutes and get acquainted with this a
 
 - In this file, import the `createContext` function from the react library and create our `ProductContext`.
 
-**STEP 3 - Providing data with ProductContext**
+**STEP 3 - Providing data with ProductContext**d
 
 - Now that we've created our `ProductContext` we can import into our `App.js`. Now we can start providing data across our application!
 
@@ -84,7 +84,7 @@ Before you get started, please take a few minutes and get acquainted with this a
 
 - After refactoring you'll notice a few errors... Don't worry we'll clean those up shortly!
 
-**STEP 4 - Consuming data with ProductContext**
+**STEP 4 - Consuming data with ProductContext**d
 
 - Now that our `ProductContext` is now providing data we can finally consume it! To do so let's head over to our `Products` component and import the `useContext` hook as well as our `ProductContext`.
 
@@ -106,7 +106,7 @@ const { products, addItem } = useContext(ProductContext);
 
 - Now our `Products` component is getting it's data solely from `Context API` 😃.
 
-**STEP 5 - Create the CartContext**
+**STEP 5 - Create the CartContext**d
 
 - Now that we have refactored our `Products` component to utilize `Context API` let's refactor our `Cart` and `Navigation` Component to use `Context API` as well.
 
@@ -114,7 +114,7 @@ const { products, addItem } = useContext(ProductContext);
 
 - Inside of our new `CartContext` import `createContext` and create a new context named `CartContext`.
 
-**STEP 6 - Providing data with CartContext**
+**STEP 6 - Providing data with CartContext**d
 
 - Let's go ahead and bring our newly created `CartContext` into our `App.js` and wrap all of our components inside of our `CartContext.Provider`. Make sure our `ProductContext.Provider` is still the root provider.
 
@@ -126,7 +126,7 @@ const { products, addItem } = useContext(ProductContext);
 
 - While were at it let's go ahead and remove the props from our navigation as well.
 
-**STEP 7 - The final stretch**
+**STEP 7 - The final stretch**d
 
 - Our cart data is now being provided to us from our `CartContext` time to consume it!
 
@@ -149,11 +149,11 @@ const { products, addItem } = useContext(ProductContext);
 
 We have now successfully converted our application into using `Context API` 🔥
 
-**MVP Requirements**
+**MVP Requirements**d
 
-- Create a `ProductContext` and a `CartContext`
-- Use the Provider Component from `ProductContext` and `CartContext` to provide data to child components
-- Consume data using the `useContext` hook from `ProductContext` and `CartContext`
+- Create a `ProductContext` and a `CartContext`d
+- Use the Provider Component from `ProductContext` and `CartContext` to provide data to child componentsd
+- Consume data using the `useContext` hook from `ProductContext` and `CartContext`d
 
 ### Task 3: Stretch Problems
 
